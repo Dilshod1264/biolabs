@@ -1,0 +1,79 @@
+@import "../../../styles/components/_vars.scss";
+@import "../../../styles/components/_mixins.scss";
+
+.main{
+  display: flex;
+  justify-content: space-between;
+
+@include xl{
+  flex-direction: column;
+}
+  .choose_title{
+  .sub{
+    color: $brand_color;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+  //  media
+    @include xl{
+      text-align: center;
+    }
+  }
+    .title{
+      font-size:70px;
+      padding-top: 10px;
+      width: 700px;
+      //media
+
+      @include xl{
+        font-size: 55px;
+        text-align: center;
+        width: 100%;
+      }
+      @include sm{
+        font-size: 35px;
+      }
+
+    }
+  p{
+    padding-top: 35px;
+    width: 657px;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 60px;
+  // media
+    @include xl{
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  }
+
+
+  .choose-banner{
+  .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //media
+    @include xl{
+      padding-top: 30px;
+    }
+
+    img{
+      margin-bottom: 35px;
+      width: 796px;
+      //height: 305px;
+      //media
+      @include xl{
+        width: 700px;
+      }
+      @include md{
+        width: 100%;
+      }
+    }
+  }
+  }
+
+}
